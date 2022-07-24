@@ -1,0 +1,18 @@
+
+    <br/>
+<div>
+    Name of List : <input type="text" class="form-control" 
+    [(ngModel)]="mainObj.name" name="name">
+</div>
+ <br/>
+ <div>
+   Enter List : <input type="text" class="form-control"
+   [(ngModel)]="lists" name="name">&nbsp;<button (click)="addToList()">+</button>
+</div>
+
+
+
+<p>Lists : {{mainObj.list.join(", ")}}</p>
+<br/>
+<button (click)="cancel()">Back</button>&nbsp;<button (click)="createList()" *ngIf="create">Create List</button><button *ngIf="!create" (click)="updateList()">Update List</button>
+<br/>

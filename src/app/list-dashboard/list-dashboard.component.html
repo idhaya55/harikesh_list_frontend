@@ -1,0 +1,9 @@
+<div class="dashboard">
+    <div style="text-align: center;"><h1>List App</h1></div>
+        <h3>All Lists</h3>
+        <ul>
+           <li *ngFor="let items of allList"><span (click)="existingList(items.index)" style="cursor: pointer;">{{items.name}}</span>&nbsp;<span (click)="delete(items.index)" style="cursor: pointer;">❌</span></li>
+        </ul>
+        <button (click)="newList()">Create New List</button>
+ 
+</div>
